@@ -1,1 +1,4 @@
-brave-ledger-verification=0f0a5efde5713af89abb489898c108f22f22c09d3896bd3d32637e43acce35cb
+This is a Brave Rewards publisher verification file.
+
+Domain: jollymick90.github.io
+Token: brave-ledger-verification=acca91ab71c85073d26f6545f227c165d0358cdfd5ca97bfa4bf69d72ece47f1
