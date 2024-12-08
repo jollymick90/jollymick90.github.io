@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + TS</title>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+  <!-- <script type="text/javascript" src="/assets/js/three.min.js"></script> -->
+  <script type="module" crossorigin src="/assets/index-Bf4Muc-D.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DyFfKXCq.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="app-name">Game App</h1>
+      <div class="messages">
+        <p>Benvenuto nel gioco!</p>
+      </div>
+      <div class="stat">
+        <label>Score</label>
+        <p id="score">0</p>
+        <div class="animate-flicker" id="variable-content">Press any button to begin</div>
+      </div>
+    </header>
+
+    <!-- Main Game Area -->
+    <main class="game-area">
+
+      <div id="arcade-area" class="game-screen world">
+        <h1>scegli il gioco</h1>
+
+      </div>
+      <div id="world" class="game-screen world hidden">
+
+      </div>
+      <div id="spacerun" class="game-screen world hidden">
+
+      </div>
+      <div id="doughnut" class="game-screen world hidden">
+      
+      </div>
+      <div id="maze" class="game-screen world hidden">
+      
+      </div>
+    </main>
+    <footer class="footer">
+
+      <div class="controls">
+        <div id="home-controls">
+          <button id="gameOneBtn" class="control-button">Christmas Run</button>
+          <button id="gameSpaceRunBtn" class="control-button">Space Run</button>
+          <button id="gameDoughnutBtn" class="control-button">Doughnut Stars</button>
+          <button id="gameMazeBtn" class="control-button">Maze Brain</button>
+        </div>
+        <div id="game-controls" class="hidden">
+          <button id="btnLeft" class="control-button">⬅️</button>
+          <button id="btnUp" class="control-button">⬆️</button>
+          <button id="btnRight" class="control-button">➡️</button>
+          <button id="btnDown" class="control-button">⬇️</button>
+          <button id="btnStop" class="control-button">⏺️</button>
+        </div>
+      </div>
+    </footer>
+  </div>
+  
+</body>
+
+</html>
