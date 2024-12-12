@@ -10,22 +10,23 @@
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
   <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
   <!-- <script type="text/javascript" src="/assets/js/three.min.js"></script> -->
-  <script type="module" crossorigin src="/secretsanta2024/assets/index-Bf4Muc-D.js"></script>
-  <link rel="stylesheet" crossorigin href="/secretsanta2024/assets/index-DyFfKXCq.css">
+  <!-- <script type="text/javascript" src="/assets/js/Box2dWeb.min.js"></script> -->
+  <!-- <script type="text/javascript" src="/assets/js/keyboard.js"></script> -->
+  <script type="module" crossorigin src="/secretsanta2024/assets/index-BsUq5yrq.js"></script>
+  <link rel="stylesheet" crossorigin href="/secretsanta2024/assets/index-CvhlTobE.css">
 </head>
 
 <body>
   <div class="container">
     <!-- Header -->
     <header class="header">
-      <h1 class="app-name">Game App</h1>
       <div class="messages">
         <p>Benvenuto nel gioco!</p>
       </div>
       <div class="stat">
-        <label>Score</label>
-        <p id="score">0</p>
-        <div class="animate-flicker" id="variable-content">Press any button to begin</div>
+        <label>Score: <span id="score">0</span></label>
+        
+        <div id="msg">Press any button to begin</div>
       </div>
     </header>
 
@@ -69,6 +70,7 @@
     </footer>
   </div>
   
+
 </body>
 
 </html>
