@@ -13,23 +13,19 @@
   <script type="text/javascript" src="/secretsanta2024/assets/jquery.js"></script>
   <!-- <script type="text/javascript" src="/assets/js/keyboard.js"></script> -->
 
-  <script type="module" crossorigin src="/secretsanta2024/assets/index-Bn6xe-K1.js"></script>
-  <link rel="stylesheet" crossorigin href="/secretsanta2024/assets/index-Cw1TB3RS.css">
-</head>
 
+  <script type="module" crossorigin src="/secretsanta2024/assets/index-CFqr91W3.js"></script>
+  <link rel="stylesheet" crossorigin href="/secretsanta2024/assets/index-BqlM_Spi.css">
+</head>
 
 <body>
   <div class="container">
-    <!-- Header -->
     <header class="header">
       <div class="stat">
-        <!-- <label>Score: <span id="score">0</span></label> -->
-
-        <div >Secret Santa 2024: Crazy Hackathon Memories </div>
+        <div>Secret Santa 2024: Crazy Hackathon Memories </div>
       </div>
     </header>
 
-    <!-- Main Game Area -->
     <main class="game-area">
       <div id="info-point" class="messaggi hidden">
         <label>Score: <span id="score">0</span></label>
@@ -38,7 +34,7 @@
       <div id="arcade-area" class="game-screen world">
         <h3 class="title">scegli il gioco</h3>
         <div id="home-controls" class="home-controls">
-         
+
           <button id="gameSpaceRunBtn" class="game-select-button">
             <svg width="80" height="80" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <!-- Corridore Futuristico -->
@@ -76,21 +72,11 @@
               <circle cx="100" cy="100" r="60" fill="#F4A460" /> <!-- Ciambella esterna -->
               <circle cx="100" cy="100" r="30" fill="#FFFFFF" /> <!-- Buco interno -->
 
-              <!-- Glassa -->
-              <path
-                d="M40 100 C50 80, 80 70, 120 90 C140 110, 160 100, 160 100 C150 120, 120 130, 80 110 C60 90, 50 110, 40 100"
-                fill="#FF69B4" />
-
               <!-- Stelle -->
               <polygon points="50,50 55,65 70,65 58,75 63,90 50,80 37,90 42,75 30,65 45,65" fill="#FFD700" />
               <polygon points="150,50 155,65 170,65 158,75 163,90 150,80 137,90 142,75 130,65 145,65" fill="#FFD700" />
               <polygon points="100,140 105,155 120,155 108,165 113,180 100,170 87,180 92,165 80,155 95,155"
                 fill="#FFD700" />
-
-              <!-- Decorazioni zuccherate -->
-              <circle cx="80" cy="80" r="5" fill="#00BFFF" />
-              <circle cx="120" cy="100" r="5" fill="#8A2BE2" />
-              <circle cx="100" cy="120" r="5" fill="#32CD32" />
             </svg>
             <span></span>Doughnut Stars</span>
           </button>
@@ -98,15 +84,15 @@
             <svg width="80" height="80" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
               <!-- Labirinto principale -->
               <rect x="40" y="40" width="120" height="120" fill="none" stroke="#000000" stroke-width="8" />
-            
+
               <!-- Percorsi interni -->
-              <path d="M60 60 H120 V80 H80 V100 H140 V140 H60 V100 H100 V60 Z" 
-                    fill="none" stroke="#000000" stroke-width="8" />
-            
+              <path d="M60 60 H120 V80 H80 V100 H140 V140 H60 V100 H100 V60 Z" fill="none" stroke="#000000"
+                stroke-width="8" />
+
               <!-- Nodo centrale (opzionale) -->
               <circle cx="100" cy="100" r="5" fill="#FF0000" />
             </svg>
-            
+
             <span> Maze Brain</span>
           </button>
         </div>
@@ -130,20 +116,29 @@
 
         <div id="game-controls" class="keyboard-layout">
           <div class="row">
-            <button id="btnUp" class="control-button">⬆️</button>
-          </div>
-          <div class="row">
             <button id="btnLeft" class="control-button">⬅️</button>
-            <button id="btnStop" class="control-button">⏺️</button>
+            <button id="btnUp" class="control-button">⬆️</button>
             <button id="btnRight" class="control-button">➡️</button>
           </div>
           <div class="row">
+            <button id="btnD" class="control-button">D</button>
             <button id="btnDown" class="control-button">⬇️</button>
+            <button id="btnPause" class="control-button">P</button>
+
           </div>
+          <div class="row">
+            <button id="btnStop" class="control-button">⏺️</button>
+            <button id="btnF" class="control-button">F</button>
+          </div>
+        </div>
+        <div id="video-area" class="area-video">
+          <video id="videoElement" class="camera"></video>
+          <!-- <canvas id="canvasOverlay" class="canvas-identity hidden"></canvas> -->
         </div>
       </div>
     </footer>
   </div>
 
 </body>
+
 </html>
